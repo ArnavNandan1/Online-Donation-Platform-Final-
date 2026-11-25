@@ -5,10 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WILL·INGNESS — A little kindness can change everything</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">\n  <link rel="stylesheet" href="css/react-impact.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/marquee.css">
 </head>
 <body>
+  <script>
+    // Remove accidental visible "\\n" or "/n" text before the page content.
+    (function () {
+      Array.from(document.body.childNodes).forEach(function (node) {
+        if (node.nodeType === Node.TEXT_NODE && (node.textContent.trim() === "\\n" || node.textContent.trim() === "/n")) {
+          node.remove();
+        }
+      });
+    })();
+  </script>
   <div id="navbar-slot"></div>
 
   <!-- India Updates marquee (mounted by js/news-marquee.js) -->
