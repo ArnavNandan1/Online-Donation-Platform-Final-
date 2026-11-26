@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f1e8;
+  color: #284c3b;
+}
+
+.dashboard {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 25px;
+}
+
+.header {
+  background: #284c3b;
+  color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.header h1 {
+  color: white;
+  font-size: 38px;
+  margin: 0 0 8px;
+}
+
+.header p {
+  color: white;
+  margin: 0;
+  font-size: 17px;
+}
+
+.clock {
+  background: #426b53;
+  color: white;
+  padding: 14px;
+  border-radius: 8px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.stat {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px #ddd;
+}
+
+.stat h3 {
+  color: #666;
+  font-size: 16px;
+}
+
+.stat h2 {
+  color: #315d49;
+  font-size: 25px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px #ddd;
+}
+
+.card h2 {
+  color: #284c3b;
+  margin-top: 0;
+}
+
+.card h3 {
+  color: #315d49;
+}
+
+.card p,
+.card label {
+  color: #555;
+}
+
+input,
+select {
+  background: white;
+  color: #333;
+  padding: 12px;
+  margin: 8px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+
+input::placeholder {
+  color: #777;
+}
+
+button {
+  background: #315d49;
+  color: white;
+  padding: 11px 15px;
+  border: none;
+  border-radius: 7px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1e4230;
+}
+
+.progress {
+  height: 20px;
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+
+.progress div {
+  height: 100%;
+  background: #65a578;
+  transition: width 0.4s;
+}
+
+.record {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
+  flex-wrap: wrap;
+}
+
+.record p {
+  color: #777;
+  font-size: 13px;
+}
+
+.delete {
+  background: #bd5656;
+}
+
+.delete:hover {
+  background: #963c3c;
+}
+
+.clear {
+  background: #777;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #777;
+}
+
+@media (max-width: 700px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header {
+    text-align: center;
+    justify-content: center;
+  }
+
+  input,
+  select {
+    width: 90%;
+  }
+}
